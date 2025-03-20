@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #561C24;
+  --secondary: #6D2932;
+  --accent: #C7B7A3;
+  --background: #E8D8C4;
+}
+
+.dark {
+  --primary: #E8D8C4;
+  --secondary: #C7B7A3;
+  --accent: #6D2932;
+  --background: #561C24;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-primary transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply px-4 py-2 rounded-lg transition-colors;
+    background-color: transparent;
+  }
+  
+  .nav-link:hover {
+    background-color: rgb(var(--accent) / 0.2);
+  }
+  
+  .section-title {
+    @apply text-3xl font-bold mb-8 text-center;
+  }
+}
