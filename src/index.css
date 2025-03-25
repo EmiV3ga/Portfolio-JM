@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --primary: #561C24;
-  --secondary: #6D2932;
-  --accent: #C7B7A3;
-  --background: #E8D8C4;
+  --primary: #561c24;
+  --secondary: #6d2932;
+  --accent: #c7b7a3;
+  --background: #e8d8c4;
 }
 
 .dark {
-  --primary: #E8D8C4;
-  --secondary: #C7B7A3;
-  --accent: #6D2932;
-  --background: #561C24;
+  --primary: #e8d8c4;
+  --secondary: #c7b7a3;
+  --accent: #6d2932;
+  --background: #561c24;
 }
 
 @layer base {
@@ -27,11 +27,11 @@
     @apply px-4 py-2 rounded-lg transition-colors;
     background-color: transparent;
   }
-  
+
   .nav-link:hover {
     background-color: rgb(var(--accent) / 0.2);
   }
-  
+
   .section-title {
     @apply text-3xl font-bold mb-8 text-center;
   }
