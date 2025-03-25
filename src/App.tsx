@@ -25,25 +25,25 @@ function MainContent() {
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/julietamendiola',
+      href: 'https://www.linkedin.com/in/julieta-mendiola-47705126a/',
       color: 'hover:text-[#0077B5]'
     },
     {
       icon: <Mail className="w-6 h-6" />,
       label: 'Email',
-      href: 'mailto:julieta.mendiola@email.com',
+      href: 'mailto:julymendiola@hotmail.com',
       color: 'hover:text-secondary'
     },
     {
       icon: <MessageSquare className="w-6 h-6" />,
       label: 'WhatsApp',
-      href: 'https://wa.me/1234567890',
+      href: 'https://wa.me/2265407667',
       color: 'hover:text-[#25D366]'
     },
     {
       icon: <Instagram className="w-6 h-6" />,
       label: 'Instagram',
-      href: 'https://instagram.com/julietamendiola',
+      href: 'https://www.instagram.com/july_mendiola/#',
       color: 'hover:text-[#E4405F]'
     }
   ];
@@ -65,7 +65,7 @@ function MainContent() {
         >
           <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-secondary">
             <img
-              src="/profile.jpg"
+              src="assets/Julieta.jpeg"
               alt="Julieta Mendiola"
               className="w-full h-full object-cover"
             />
@@ -150,7 +150,7 @@ function MainContent() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com/in/julietamendiola"
+                href="https://www.linkedin.com/in/julieta-mendiola-47705126a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:text-secondary transition-colors"
@@ -158,7 +158,7 @@ function MainContent() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://instagram.com/julietamendiola"
+                href="https://www.instagram.com/july_mendiola/#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:text-secondary transition-colors"
