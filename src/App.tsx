@@ -6,7 +6,7 @@ import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import PortfolioModal from './components/PortfolioModal';
 import { useLanguage } from './context/LanguageContext';
-import { Briefcase, PenTool, LineChart, Mail, Send } from 'lucide-react';
+import { Briefcase, PenTool, LineChart, Linkedin, Mail, Instagram, MessageSquare } from 'lucide-react';
 
 function MainContent() {
   const { t, language } = useLanguage();
@@ -21,8 +21,35 @@ function MainContent() {
     visible: { opacity: 1, y: 0 },
   };
 
+  const socialLinks = [
+    {
+      icon: <Linkedin className="w-6 h-6" />,
+      label: 'LinkedIn',
+      href: 'https://linkedin.com/in/julietamendiola',
+      color: 'hover:text-[#0077B5]'
+    },
+    {
+      icon: <Mail className="w-6 h-6" />,
+      label: 'Email',
+      href: 'mailto:julieta.mendiola@email.com',
+      color: 'hover:text-secondary'
+    },
+    {
+      icon: <MessageSquare className="w-6 h-6" />,
+      label: 'WhatsApp',
+      href: 'https://wa.me/1234567890',
+      color: 'hover:text-[#25D366]'
+    },
+    {
+      icon: <Instagram className="w-6 h-6" />,
+      label: 'Instagram',
+      href: 'https://instagram.com/julietamendiola',
+      color: 'hover:text-[#E4405F]'
+    }
+  ];
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
 
       {/* Hero Section */}
@@ -36,6 +63,13 @@ function MainContent() {
           variants={fadeIn}
           className="text-center"
         >
+          <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-secondary">
+            <img
+              src="/profile.jpg"
+              alt="Julieta Mendiola"
+              className="w-full h-full object-cover"
+            />
+          </div>
           <p className="text-xl mb-2">{t.hero.greeting}</p>
           <h1 className="text-5xl font-bold mb-4">{t.hero.title}</h1>
           <p className="text-2xl text-secondary">{t.hero.subtitle}</p>
@@ -89,57 +123,52 @@ function MainContent() {
         <div className="container mx-auto px-4">
           <h2 className="section-title">{t.contact.title}</h2>
           <div className="max-w-lg mx-auto bg-background rounded-xl shadow-lg p-8">
-            <form className="space-y-6">
-              <div>
-                <label
-                  htmlFor="name"
-                  className="block text-sm font-medium mb-2"
+            <div className="grid grid-cols-2 gap-6">
+              {socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex items-center gap-3 p-4 rounded-lg border border-accent/20 hover:border-accent transition-colors ${link.color}`}
                 >
-                  {language === 'en' ? 'Name' : 'Nombre'}
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-2 rounded-lg border border-accent/20 bg-background focus:outline-none focus:ring-2 focus:ring-secondary/50"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium mb-2"
-                >
-                  {language === 'en' ? 'Email' : 'Correo'}
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-2 rounded-lg border border-accent/20 bg-background focus:outline-none focus:ring-2 focus:ring-secondary/50"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium mb-2"
-                >
-                  {language === 'en' ? 'Message' : 'Mensaje'}
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full px-4 py-2 rounded-lg border border-accent/20 bg-background focus:outline-none focus:ring-2 focus:ring-secondary/50"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-secondary text-background py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-secondary/90 transition-colors"
-              >
-                <Send className="w-5 h-5" />
-                {language === 'en' ? 'Send Message' : 'Enviar Mensaje'}
-              </button>
-            </form>
+                  {link.icon}
+                  <span className="font-medium">{link.label}</span>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="py-8 bg-accent/10 mt-auto">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm">
+              © {new Date().getFullYear()} Julieta Mendiola. {language === 'en' ? 'All rights reserved.' : 'Todos los derechos reservados.'}
+            </p>
+            <div className="flex gap-4">
+              <a
+                href="https://linkedin.com/in/julietamendiola"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-secondary transition-colors"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a
+                href="https://instagram.com/julietamendiola"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-secondary transition-colors"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
 
       <PortfolioModal
         isOpen={isPortfolioOpen}
