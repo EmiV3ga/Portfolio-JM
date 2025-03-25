@@ -6,6 +6,7 @@ import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import PortfolioModal from './components/PortfolioModal';
 import { useLanguage } from './context/LanguageContext';
+import JulietaImage from './assets/Julieta.jpeg';
 import { Briefcase, PenTool, LineChart, Linkedin, Mail, Instagram, MessageSquare } from 'lucide-react';
 
 function MainContent() {
@@ -65,9 +66,9 @@ function MainContent() {
         >
           <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden border-4 border-secondary">
             <img
-              src="assets/Julieta.jpeg"
-              alt="Julieta Mendiola"
-              className="w-full h-full object-cover"
+                src={JulietaImage}
+                alt="Julieta Mendiola"
+                className="w-full h-full object-cover"
             />
           </div>
           <p className="text-xl mb-2">{t.hero.greeting}</p>
