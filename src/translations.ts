@@ -16,7 +16,22 @@ export const translations: Record<'en' | 'es', Translation> = {
     },
     about: {
       title: 'About Me',
-      description: 'I am a Business Economics student with a background in Marketing and Graphic Design. My unique combination of analytical and creative skills allows me to develop comprehensive business strategies while creating visually appealing content that drives engagement.',
+      description:'\n' +
+          '\n' +
+          'I am Julieta Mendiola, a 4th year student of Business Economics at the Universidad Nacional del Centro de la Provincia de Buenos Aires. I specialize in financial analysis, resource management and process optimization, with a strategic and data-driven approach to decision making.  \n' +
+          '\n' +
+          'My work experience includes internships in the Finance and Treasury area in companies such as **Cagnoli** and **Grupo Faro Verde**, where I have developed skills in per diem management, insurance policy control, loading and filing of payment vouchers, in addition to the follow-up of fiscal and financial obligations. I have also worked in customer service and payment administration at **La Granja Feliz**, strengthening my skills in cash management, supplier relations and operational organization.  \n' +
+          '\n' +
+          'I complement my training with certifications in **Digital Marketing, International Trade, Graphic Design and E-commerce**, which allows me to integrate business strategies with digital tools to enhance the profitability and positioning of companies.  \n' +
+          '\n' +
+          'In terms of technical skills, I handle **Microsoft Office (Excel, Word, PowerPoint)** and **Google Drive (Docs, Sheets, Slides)**, in addition to having knowledge in **WordPress** for website management and design tools such as **Illustrator, Photoshop and CorelDRAW**. In terms of languages, I have a **B2 level in English and A2 in Italian**.  \n' +
+          '\n' +
+          'My interest in technology applied to finance has led me to explore the world of **fintech** and **investments**, with the aim of developing innovative solutions for the management of assets and business resources.  \n' +
+          '\n' +
+          'In addition, my experience in the **agricultural sector** has allowed me to understand the functioning of key markets in the economy, bringing a comprehensive vision to strategic decision making.  \n' +
+          '\n' +
+          'I am a person in constant learning, proactive and with the ability to adapt to dynamic environments. I am looking for opportunities that allow me to continue growing professionally, provide innovative solutions and generate impact in the economic and financial field.\n' +
+          '\n' +
     },
     skills: {
       title: 'My Skills',
@@ -45,8 +60,22 @@ export const translations: Record<'en' | 'es', Translation> = {
     },
     about: {
       title: 'Sobre Mí',
-      description: 'I am a Business Economics student with a background in Marketing and Graphic Design. My unique combination of analytical and creative skills allows me to develop comprehensive business strategies while creating visually appealing content that drives engagement.',
-    },
+      description: '\n' +
+          '\n' +
+          'Soy Julieta Mendiola, estudiante de 4to año de Economía Empresarial en la Universidad Nacional del Centro de la Provincia de Buenos Aires. Me especializo en análisis financiero, gestión de recursos y optimización de procesos, con un enfoque estratégico y basado en datos para la toma de decisiones.  \n' +
+          '\n' +
+          'Mi experiencia laboral incluye pasantías en el área de Finanzas y Tesorería en empresas como **Cagnoli** y **Grupo Faro Verde**, donde he desarrollado habilidades en la gestión de viáticos, control de pólizas de seguros, carga y archivo de comprobantes de pago, además del seguimiento de obligaciones fiscales y financieras. También he trabajado en atención al cliente y administración de pagos en **La Granja Feliz**, reforzando mis habilidades en gestión de tesorería, relación con proveedores y organización operativa.  \n' +
+          '\n' +
+          'Complemento mi formación con certificaciones en **Marketing Digital, Comercio Internacional, Diseño Gráfico y Comercio Electrónico**, lo que me permite integrar estrategias de negocio con herramientas digitales para potenciar la rentabilidad y el posicionamiento de las empresas.  \n' +
+          '\n' +
+          'En cuanto a habilidades técnicas, manejo **Microsoft Office (Excel, Word, PowerPoint)** y **Google Drive (Docs, Sheets, Slides)**, además de tener conocimientos en **WordPress** para la gestión de sitios web y herramientas de diseño como **Illustrator, Photoshop y CorelDRAW**. En cuanto a idiomas, tengo un nivel **B2 en inglés y A2 en italiano**.  \n' +
+          '\n' +
+          'Mi interés por la tecnología aplicada a las finanzas me ha llevado a explorar el mundo del **fintech** y las **inversiones**, con el objetivo de desarrollar soluciones innovadoras para la gestión de activos y recursos empresariales.  \n' +
+          '\n' +
+          'Además, mi experiencia en el **sector agrario** me ha permitido entender el funcionamiento de mercados clave en la economía, aportando una visión integral a la toma de decisiones estratégicas.  \n' +
+          '\n' +
+          'Soy una persona en constante aprendizaje, proactiva y con capacidad de adaptación a entornos dinámicos. Busco oportunidades que me permitan seguir creciendo profesionalmente, aportar soluciones innovadoras y generar impacto en el ámbito económico y financiero.' +
+       },
     skills: {
       title: 'Mis Habilidades',
       business: 'Economía Empresarial',
