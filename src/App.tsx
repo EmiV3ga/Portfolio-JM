@@ -61,7 +61,7 @@ function MainContent() {
             className="text-center"
         >
           {/* Contenedor del círculo (aumentado) */}
-          <div className="w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden border-8 border-secondary">
+          <div className="w-80 h-80 mx-auto mb-8 rounded-full overflow-hidden border-8 border-secondary">
             <img
                 src={JulietaImage}  // Asegúrate de importarla correctamente
                 alt="Julieta Mendiola"
